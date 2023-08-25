@@ -171,7 +171,249 @@ let  x = 10;
 // Here x is 10
 document.getElementById("nonblock").innerHTML = x;
 </script>
-    
+
+<h1>JavaScript String Operators</h1>
+<h2>The + Operator</h2>
+<p>Adding a number and a string, returns a string.</p>
+
+<p id="calculation"></p>
+
+<script>
+let d = 5 + 5;
+let f = "5" + 5;
+let l = "Hello" + 5;
+document.getElementById("calculation").innerHTML =
+x + "<br>" + y + "<br>" + z;
+</script>
+
+<h1>JavaScript String Operators</h1>
+
+<p>All conditional operators can be used on both numbers and strings.</p>
+
+<p id="Hi"></p>
+<p id="arhama"></p>
+<script>
+let text1 = 100;
+let text2 = 30;
+let result = text1 > text2;
+document.getElementById("Hi").innerHTML = "Is E less than F? " + result ;
+if(result == true){
+  document.getElementById("arhama").innerHTML="100";
+}
+</script>
+
+<h1>JavaScript String Operators</h1>
+<h2>The + Operator</h2>
+<p>The + operator concatenates (adds) strings.</p>
+
+<p id="name"></p>
+
+<script>
+let ONE = "John";
+let TWO = "Doe";
+let THREE = text1  + text2;
+document.getElementById("name").innerHTML = THREE;
+</script>
+<h2>JavaScript Data Types</h2>
+
+<p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+
+<p id="hey"></p>
+
+<script>
+let r;         // Now x is undefined
+r = 5;         // Now x is a Number
+r = "John";    // Now x is a String
+
+document.getElementById("hey").innerHTML = r;
+</script>
+
+<h1>JavaScript Functions</h1>
+
+<p>Call a function which performs a calculation and returns the result:</p>
+
+<p id="call"></p>
+
+<script>
+let n = myFunction(4, 3);
+document.getElementById("call").innerHTML = n;
+
+function myFunction(x, w) {
+  return x * w;
+}
+</script>
+
+
+<h1>JavaScript Functions</h1>
+
+<p>Invoke (call) a function that converts from Fahrenheit to Celsius:</p>
+<p id="sun"></p>
+
+<script>
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+
+let value = toCelsius(3);
+document.getElementById("sun").innerHTML = value;
+</script>
+
+<h1>JavaScript Functions</h1>
+<p>Using a function as a variable:</p>
+
+<p id="mon"></p>
+
+<script>
+let text = "The temperature is " + toCelsius(77) + " Celsius.";
+document.getElementById("mon").innerHTML = text;
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+} 
+</script>
+
+<h2>JavaScript Objects</h2>
+
+<p id="wah"></p>
+
+<script>
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+// Display some data from the object:
+document.getElementById("wah").innerHTML =
+person.firstName + " has " + person.eyeColor + " color eyes.";
+</script>
+
+<h1>JavaScript Strings</h1>
+<h2>The length Property</h2>
+
+<p>The length of the string is:</p>
+<p id="you"></p>
+
+<script>
+let work = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("you").innerHTML = work.length;
+</script>
+
+
+<h1>JavaScript Strings</h1>
+
+<p>The escape sequence \" inserts a double quote in a string.</p>
+
+<p id="nope"></p>
+
+<script>
+let yes = "We are the so-called \"Vikings\" from the north.";
+document.getElementById("nope").innerHTML = yes; 
+</script>
+
+
+<h1>JavaScript Strings</h1>
+<h2>The slice() Method</h2>
+
+<p>Extract a part of a string from position 7:</p>
+<p id="slice"></p>
+
+<script>
+let text1 = "Apple, Banana, Kiwi";
+let part = text1.slice(7)
+document.getElementById("slice").innerHTML = part;
+</script>
+
+<h2>JavaScript Objects</h2>
+<p>An object method is a function definition, stored as a property value.</p>
+
+<p id="ibad"></p>
+
+<script>
+// Create an object:
+const per = {
+  FirstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return this.FirstName + " " + this.lastName;
+  }
+};
+
+// Display data from the object:
+document.getElementById("ibad").innerHTML = per.fullName();
+</script>
+
+
+
+<h1>JavaScript Numbers</h1>
+<h2>Integer Precision</h2>
+
+<p>Integers (numbers without a period or exponent notation) are accurate up to 15 digits:</p>
+
+<p id="daim"></p>
+
+<script>
+let g = 999999999999999;
+let h = 9999999999999999;
+document.getElementById("daim").innerHTML = g + "<br>" + h;
+</script>
+
+<h2>JavaScript Numbers</h2>
+
+<p>A common mistake is to expect this result to be 30:</p>
+
+<p id="hadia"></p>
+
+<script>
+var i = 10;
+var j = 20;
+document.getElementById("hadia").innerHTML =
+"The result is: " + i + j;
+</script>
+
+
+<h2>JavaScript Numbers</h2>
+
+<p>Division by zero generates Infinity;</p>
+
+<p id="tasbiha"></p>
+
+<script>
+let o = 2/0;
+let p = -2/0;
+document.getElementById("tasbiha").innerHTML = o + "<br>" + p;
+</script>
+
+
+<h2>JavaScript Numbers</h2>
+
+<p>Numbers and Number objects cannot be safely compared:</p>
+
+<p id="fariya"></p>
+
+<script>
+// x is a number
+let q = 500;
+
+// y is an object
+let s = new Number(500);
+document.getElementById("fariya").innerHTML = (q==s);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
